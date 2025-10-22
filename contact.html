@@ -41,10 +41,27 @@
                             <input type="text" name="name" required>
                         </label>
                     </p>
-                    <p>メールアドレス（必須）</p>
+                    <p>
+                        <label>
+                            メールアドレス（必須）<br>
+                            <input type="email" name="mail" required>
+                        </label>
+                    </p>
                     <p>お問い合わせ種類<br>
-                        事前のご相談　その他</p>
-                    <p>内容</p>
+                        <label>
+                            <input type="radio" name="kind" value="0">事前のご相談
+                        </label>　
+                        <label>
+                            <input type="radio" name="kind" value="1">その他
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            内容<br>
+                            <textarea name="comment"></textarea>
+                        </label>
+                    </p>
+                    <p><input type="submit" value="確認する"></p>
                 </form>
             </article>
         </div>
